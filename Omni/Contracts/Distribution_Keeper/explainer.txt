@@ -1,0 +1,5 @@
+/*
+Alpha distribution keepr sends order to all beta keeprs to run sendProfits from refueler to omnify contract &
+triggerDistributionRoundByKeeper on the omnify contract deployed on their chains.
+(ronin not supported by lzro)
+*/

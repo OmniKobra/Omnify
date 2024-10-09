@@ -1,0 +1,11 @@
+icons_launcher:
+  image_path: "assets/omnilauncher.png"
+  platforms:
+    android:
+      enable: true
+    ios:
+      enable: true
+    web:
+      enable: true
+    windows:
+      enable: true

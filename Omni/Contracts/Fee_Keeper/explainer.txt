@@ -1,0 +1,6 @@
+/*
+Alpha contract gets current token prices for each native token on each supported chain every 4 hours
+Alpha contract gets new token fee values according to usd fee value peg for each chain token and sends them cross-chain to target chain beta fee keeper
+beta fee keeper modifies fees on main omnify contract and refueler contract
+(ronin not supported by lzro)
+*/
