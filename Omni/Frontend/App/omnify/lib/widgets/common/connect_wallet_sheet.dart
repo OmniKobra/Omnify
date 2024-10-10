@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
 import 'package:qr_flutter_wc/qr_flutter_wc.dart';
-// import 'package:url_launcher/url_launcher_string.dart';
+import 'package:url_launcher/url_launcher_string.dart';
 import 'package:walletconnect_flutter_v2/walletconnect_flutter_v2.dart';
 
 import '../../providers/theme_provider.dart';
@@ -13,6 +13,7 @@ import '../../providers/wallet_provider.dart';
 import '../../toasts.dart';
 import '../../utils.dart';
 import '../../crypto/utils/chain_data.dart';
+import '../../crypto/utils/device_utils.dart';
 import '../../crypto/utils/eip155.dart';
 import 'error_widget.dart';
 
@@ -353,22 +354,22 @@ class _ConnectWalletSheetState extends State<ConnectWalletSheet> {
                                             widthQuery, () {
                                           showQrCode(dir);
                                         }, primaryColor),
-
-                                        //TODO: ADD METAMASK, TRUST, RAINBOW, RONIN, OKX, Binance, coinbase, exodus native connection buttons
-
-                                        // buildChoiceTile(
-                                        //     lang.wcsheet4,
-                                        //     lang.wcsheet5,
-                                        //     Icons.account_balance_wallet,
-                                        //     isDark,
-                                        //     widthQuery, () {
-                                        //   final encodedUri =
-                                        //       Uri.encodeComponent(resp.toString());
-                                        //   print(resp.toString());
-                                        //   launchUrlString('metamask://wc?uri=$encodedUri',
-                                        //       mode: LaunchMode.externalApplication);
-                                        //   setState(() {});
-                                        // }, primaryColor),
+                                        if (!DeviceUtils.isPcWeb())
+                                          buildChoiceTile(
+                                              lang.wcsheet4,
+                                              lang.wcsheet5,
+                                              Icons.account_balance_wallet,
+                                              isDark,
+                                              widthQuery, () {
+                                            final encodedUri =
+                                                Uri.encodeComponent(
+                                                    resp.uri.toString());
+                                            launchUrlString(
+                                                'wc://wc?uri=$encodedUri',
+                                                mode: LaunchMode
+                                                    .externalApplication);
+                                            setState(() {});
+                                          }, primaryColor),
                                         const SizedBox(height: 5),
                                         Center(
                                           child: SizedBox(
