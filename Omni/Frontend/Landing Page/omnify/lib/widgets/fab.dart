@@ -87,7 +87,9 @@ class _MyFabState extends State<MyFab> {
       mainAxisAlignment: MainAxisAlignment.start,
       crossAxisAlignment: CrossAxisAlignment.end,
       mainAxisSize: MainAxisSize.min,
-      children: [
+      children: wallet.walletSheetOpen
+          ? []
+          : [
         if (tabView == TabView.governance && walletConnected && shares > 0)
           buildButton(Icons.add_box_rounded, lang.home7, primaryColor,
               widthQuery, isDark, walletConnected),
