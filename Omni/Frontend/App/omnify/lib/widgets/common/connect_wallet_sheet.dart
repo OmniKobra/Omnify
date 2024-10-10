@@ -365,11 +365,7 @@ class _ConnectWalletSheetState extends State<ConnectWalletSheet> {
                                               Icons.account_balance_wallet,
                                               isDark,
                                               widthQuery, () {
-                                            final encodedUri =
-                                                Uri.encodeComponent(
-                                                    resp.uri.toString());
-                                            launchUrlString(
-                                                'wc://wc?uri=$encodedUri',
+                                            launchUrlString(resp.uri.toString(),
                                                 mode: LaunchMode
                                                     .externalApplication);
                                             setState(() {});
