@@ -29,6 +29,7 @@ class ConnectWalletSheet extends StatefulWidget {
 class _ConnectWalletSheetState extends State<ConnectWalletSheet> {
   ViewMode view = ViewMode.idle;
   late Future<void> future;
+  late void Function() closeSheet;
   late Web3App wcClient;
   late ConnectResponse resp;
   // static final List<String> neededPlatforms = ['ios', 'android', 'web'];
@@ -76,7 +77,9 @@ class _ConnectWalletSheetState extends State<ConnectWalletSheet> {
   @override
   void initState() {
     super.initState();
+    final wallet = Provider.of<WalletProvider>(context, listen: false);
     final theme = Provider.of<ThemeProvider>(context, listen: false);
+    closeSheet = wallet.walletSheetClose;
     wcClient = theme.walletClient;
     updateNamespaces();
     future = initWebClient();
@@ -136,6 +139,7 @@ class _ConnectWalletSheetState extends State<ConnectWalletSheet> {
 
   @override
   void dispose() {
+    closeSheet();
     super.dispose();
   }
 
