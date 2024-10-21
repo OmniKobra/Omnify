@@ -243,7 +243,7 @@ class _PaymentRequestWidgetState extends State<PaymentRequestWidget>
         .getAddressString(widget.c);
     paymentLink =
         'https://app.omnify.finance/pay/chain=${widget.c.name}?vendor=$vendor?id=${widget.paymentID}?amount=${widget.amount}?gas=${widget.networkFee}?omnify=${widget.omnifyFee}?installmentFee=${widget.installmentFee}?isInstallments=${widget.isInstallments}?period=${widget.installmentPeriod}?amountpermonth=${widget.amountperMonth}?fullAmount=${widget.fullAmount}?finalMonthAmount=${widget.finalMonthAmount}';
-    final qrCode = QrCode(31, QrErrorCorrectLevel.Q)..addData(paymentLink);
+    final qrCode = QrCode(11, QrErrorCorrectLevel.L)..addData(paymentLink);
     qrImage = QrImage(qrCode);
     networkFee = widget.networkFee;
     omnifyFee = widget.omnifyFee;
