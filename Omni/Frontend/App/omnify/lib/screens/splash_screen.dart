@@ -114,7 +114,7 @@ class _SplashScreenState extends State<SplashScreen> {
                                 Padding(
                                     padding: const EdgeInsets.all(8),
                                     child: Text(
-                                      "V1.1.6",
+                                      "V1.1.8",
                                       style: TextStyle(
                                           fontSize: 13,
                                           color: isDark
@@ -150,7 +150,7 @@ class _SplashScreenState extends State<SplashScreen> {
                               Padding(
                                   padding: const EdgeInsets.all(8),
                                   child: Text(
-                                    "V1",
+                                    "V1.1.8",
                                     style: TextStyle(
                                         fontSize: 13,
                                         color: isDark
