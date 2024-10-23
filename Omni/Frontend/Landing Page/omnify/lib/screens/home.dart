@@ -196,9 +196,9 @@ class _MyHomePageState extends State<MyHomePage> {
   Future<void> prepareForConnection() async {
     var keys = _stateWcClient.getActiveSessions().keys.toList();
     for (var key in keys) {
-      // await _stateWcClient.disconnectSession(
-      //     topic: key,
-      //     reason: const WalletConnectError(code: 1, message: "message"));
+      await _stateWcClient.disconnectSession(
+          topic: key,
+          reason: const WalletConnectError(code: 1, message: "message"));
       await _stateWcClient.sessions.delete(key);
     }
   }
