@@ -44,6 +44,13 @@ class ThemeProvider with ChangeNotifier {
   Web3App get walletClient => _walletClient;
 
   void setWalletClient(Web3App _wc) {
+    var keys = _wc.getActiveSessions().keys.toList();
+    for (var key in keys) {
+      await _wc.disconnectSession(
+          topic: key,
+          reason: const WalletConnectError(code: 1, message: "message"));
+      await _wc.sessions.delete(key);
+    }
     _walletClient = _wc;
     notifyListeners();
   }
