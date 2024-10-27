@@ -30,8 +30,9 @@ class FR_Language implements AppLanguage {
       "Plateforme de paiement à grande échelle couvrant tous vos besoins de paiement : payez et soyez payé en totalité ou en plusieurs fois avec OmniPay";
   final carDescription3 =
       "Créez votre propre dépôt avec des jetons compatibles ERC20 ou natifs sur OmniTrust. Ajoutez des bénéficiaires avec ou sans allocation spécifique";
+  //TODO ADD NEXT SUPPORTED NETWORKS HERE
   final carDescription4 =
-      "Migrer ou renvoyer des jetons pontés entre Avalanche, Optimism, Binance Smart Chain, Fantom, Mantle, Gnosis, Celo, Tron, Arbitrum, Polygon, Base, Linea, Scroll, Blast et ZKsync.\nUtilise le verrouillage et la frappe/gravure sur la fonctionnalité de retour";
+      "Migrer ou renvoyer des jetons pontés entre Avalanche, Optimism, Binance Smart Chain, Fantom, Mantle, Gnosis, Celo, Tron, Arbitrum, ApeChain, Polygon, Base, Linea, Scroll, Blast et ZKsync.\nUtilise le verrouillage et la frappe/gravure sur la fonctionnalité de retour";
   final carDescription5 = "LOTTERY ";
   final carDescription6 = "LOANS ";
   final carDescription7 =
