@@ -30,8 +30,9 @@ class AR_Language implements AppLanguage {
       "مركز مدفوعات كامل النطاق يغطي جميع احتياجاتك المتعلقة بالدفع: ادفع واحصل على الدفعة بالكامل أو على أقساط باستخدام OmniPay";
   final carDescription3 =
       "أنشئ وديعتك الخاصة باستخدام رموز متوافقة مع ERC20 أو أصلية على OmniTrust. أضف المستفيدين مع بدل معين أو بدونه";
+  //TODO ADD NEXT SUPPORTED NETWORKS HERE
   final carDescription4 =
-      "نقل أو إرجاع الرموز المرتبطة بين Avalanche وOptimism وBinance Smart Chain وFantom وMantle وGnosis وCelo وTron وArbitrum وPolygon وBase وLinea وScroll وBlast وZKsync.\nيستخدم القفل والسك/الحرق عند الإرجاع";
+      "نقل أو إرجاع الرموز المرتبطة بين Avalanche وOptimism وBinance Smart Chain وFantom وMantle وGnosis وCelo وTron وArbitrum وApeChain وPolygon وBase وLinea وScroll وBlast وZKsync.\nيستخدم القفل والسك/الحرق عند الإرجاع";
   final carDescription5 = "LOTTERY ";
   final carDescription6 = "LOANS ";
   final carDescription7 =
