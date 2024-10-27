@@ -1,7 +1,0 @@
-/*
-Will contain the refueler contract.
-- refuel native gas token from whitelisted erc20 tokens.
-- receive fee changing orders from beta fee keepers on each network deployed.
-- receive send profits to main omnify contract order from beta distribution keepers
-(ronin not supported by lzro)
-*/

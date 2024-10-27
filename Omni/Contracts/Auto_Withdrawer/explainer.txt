@@ -1,5 +1,0 @@
-/*
-will contain contract that automatically withdraws and sends profit tokens to omni token holder specified in contract body each distribution round.
-Alpha contract on one chain sends cross-chain orders to all beta contracts on each supported chain.
-(ronin not supported by lzro)
-*/
