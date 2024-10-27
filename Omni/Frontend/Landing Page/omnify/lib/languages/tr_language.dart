@@ -30,8 +30,9 @@ class TR_Language implements AppLanguage {
       "Ödemeleriniz için büyük ödeme platformu: OmniPay'e toplam ödeme ve artı ödemeler";
   final carDescription3 =
       "ERC20 veya OmniTrust'ta uyumlu jetonlar için kendi deponuzu oluşturun. Faydalı olanları veya özel tahsisleri ekleyin";
+  //TODO ADD NEXT SUPPORTED NETWORKS HERE
   final carDescription4 =
-      "Avalche, Optimism, Binance Smart Chain, Fantom, Mantle, Gnosis, Celo, Tron, Arbitrum, Polygon, Base, Linea, Scroll, Blast ve ZKstnc arasındaki köprülü tokenleri taşıyın veya geri getirin.\nKilitleme ve nane / yakmayı kullanır dönüş işlevinde";
+      "Avalche, Optimism, Binance Smart Chain, Fantom, Mantle, Gnosis, Celo, Tron, Arbitrum, ApeChain, Polygon, Base, Linea, Scroll, Blast ve ZKstnc arasındaki köprülü tokenleri taşıyın veya geri getirin.\nKilitleme ve nane / yakmayı kullanır dönüş işlevinde";
   final carDescription5 = "PIYANGO ";
   final carDescription6 = "KREDİLER";
   final carDescription7 =
