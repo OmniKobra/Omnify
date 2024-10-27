@@ -1,0 +1,56 @@
+[profile.default]
+src = "src"
+out = "out"
+libs = ["lib"]
+remappings = [
+    '@openzeppelin/contracts/=lib/openzeppelin-contracts/contracts/',
+    '@openzeppelin/contracts-upgradeable/=lib/openzeppelin-contracts-upgradeable/contracts/',
+    '@layerzerolabs/lz-evm-oapp-v2/contracts/=lib/LayerZero-v2/packages/layerzero-v2/evm/oapp/contracts/',
+    '@layerzerolabs/lz-evm-protocol-v2/=lib/LayerZero-v2/packages/layerzero-v2/evm/protocol',
+    '@layerzerolabs/lz-evm-messagelib-v2/=lib/LayerZero-v2/packages/layerzero-v2/evm/messagelib',
+    'solidity-bytes-utils/contracts/=lib/solidity-bytes-utils/contracts/'
+]
+# See more config options https://github.com/foundry-rs/foundry/blob/master/crates/config/README.md#all-options
+[rpc_endpoints]
+43114 = "${AVALANCHE_RPC_URL}"
+43113 = "${FUJI_RPC_URL}"
+10 = "${OPTIMISM_RPC_URL}"
+1 = "${ETHEREUM_RPC_URL}"
+56 = "${BNB_RPC_URL}"
+97 = "${BNB_TESTNET_RPC_URL}"
+42161 = "${ARBITRUM_RPC_URL}"
+137 = "${POLYGON_RPC_URL}"
+250 = "${FANTOM_RPC_URL}"
+728126428 = "${TRON_RPC_URL}"
+8453 = "${BASE_RPC_URL}"
+59144 = "${LINEA_RPC_URL}"
+5000 = "${MANTLE_RPC_URL}"
+100 = "${GNOSIS_RPC_URL}"
+2020 = "${RONIN_RPC_URL}"
+324 = "${ZKSYNC_RPC_URL}"
+42220 = "${CELO_RPC_URL}"
+534352 = "${SCROLL_RPC_URL}"
+81457 = "${BLAST_RPC_URL}"
+33139 = "${APE_RPC_URL}"
+
+[etherscan]
+43114 = { key = "verifyContract", url = "${AVALANCHE_SCAN_URL}" }
+43113 = { key = "verifyContract", url = "${FUJI_SCAN_URL}" }
+10 = { key = "${OPTIMISM_KEY}", url = "${OPTIMISM_SCAN_URL}" }
+1 = { key = "${ETHEREUM_KEY}", url = "${ETHEREUM_SCAN_URL}" }
+56 = { key = "${BNB_KEY}", url = "${BNB_SCAN_URL}" }
+97 = { key = "${BNB_KEY}", url = "${BNB_TESTNET_SCAN_URL}" }
+42161 = { key = "${ARBITRUM_KEY}", url = "${ARBITRUM_SCAN_URL}" }
+137 = { key = "${POLYGON_KEY}", url = "${POLYGON_SCAN_URL}" }
+250 = { key = "${FANTOM_KEY}", url = "${FANTOM_SCAN_URL}" }
+728126428 = { key = "${TRON_KEY}", url = "${TRON_SCAN_URL}" }
+8453 = { key = "${BASE_KEY}", url = "${BASE_SCAN_URL}" }
+59144 = { key = "${LINEA_KEY}", url = "${LINEA_SCAN_URL}" }
+5000 = { key = "verifyContract", url = "${MANTLE_SCAN_URL}" }
+100 = { key = "${GNOSIS_KEY}", url = "${GNOSIS_SCAN_URL}" }
+2020 = { key = "${RONIN_KEY}", url = "${RONIN_SCAN_URL}" }
+324 = { key = "${ZKSYNC_KEY}", url = "${ZKSYNC_SCAN_URL}" }
+42220 = { key = "${CELO_KEY}", url = "${CELO_SCAN_URL}" }
+534352 = { key = "${SCROLL_KEY}", url = "${SCROLL_SCAN_URL}" }
+81457 = { key = "${BLAST_KEY}", url = "${BLAST_SCAN_URL}" }
+33139 = { key = "${APE_KEY}", url = "${APE_SCAN_URL}" }
