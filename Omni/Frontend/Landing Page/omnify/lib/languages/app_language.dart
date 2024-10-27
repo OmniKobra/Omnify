@@ -26,8 +26,9 @@ abstract class AppLanguage {
       "Full-scale payments hub covering all your payment needs: pay and get paid in full, or in installments with OmniPay";
   final carDescription3 =
       "Create your own deposit with ERC20 compatible or native tokens on OmniTrust. Add beneficiaries with or without a specific allowance";
+  //TODO ADD NEXT SUPPORTED NETWORKS HERE
   final carDescription4 =
-      "Migrate or return bridged tokens between Avalanche, Optimism, Binance Smart Chain, Fantom, Mantle, Gnosis, Celo, Tron, Arbitrum, Polygon, Base, Linea, Scroll, Blast, and ZKstnc.\nUses lock and mint / burn on return functionality";
+      "Migrate or return bridged tokens between Avalanche, Optimism, Binance Smart Chain, Fantom, Mantle, Gnosis, Celo, Tron, Arbitrum, ApeChain, Polygon, Base, Linea, Scroll, Blast, and ZKstnc.\nUses lock and mint / burn on return functionality";
   final carDescription5 = "LOTTERY ";
   final carDescription6 = "LOANS ";
   final carDescription7 =
