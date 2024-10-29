@@ -388,24 +388,29 @@ class _MyHomePageState extends State<MyHomePage> {
                       // image,
                     ],
               leading: dir == TextDirection.ltr
-                  ? Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceAround,
-                      mainAxisSize: MainAxisSize.max,
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      children: <Widget>[
-                          // image,
-                          buildButton(lang.home1, TabView.home, handler,
-                              currentView, isDark),
-                          buildButton(lang.home2, TabView.explorer, handler,
-                              currentView, isDark),
-                          buildButton(lang.home3, TabView.governance, handler,
-                              currentView, isDark),
-                          buildButton(lang.home4, TabView.fees, handler,
-                              currentView, isDark),
-                          buildButton(lang.home9, TabView.coins, handler,
-                              currentView, isDark),
-                          const Spacer()
-                        ])
+                  ? ListView(
+                      scrollDirection: Axis.horizontal,
+                      children: [
+                        Row(
+                            mainAxisAlignment: MainAxisAlignment.start,
+                            // mainAxisSize: MainAxisSize.max,
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            children: <Widget>[
+                              // image,
+                              buildButton(lang.home1, TabView.home, handler,
+                                  currentView, isDark),
+                              buildButton(lang.home2, TabView.explorer, handler,
+                                  currentView, isDark),
+                              buildButton(lang.home3, TabView.governance,
+                                  handler, currentView, isDark),
+                              buildButton(lang.home4, TabView.fees, handler,
+                                  currentView, isDark),
+                              buildButton(lang.home9, TabView.coins, handler,
+                                  currentView, isDark),
+                              // const Spacer()
+                            ]),
+                      ],
+                    )
                   : null),
           floatingActionButton: const MyFab(),
           floatingActionButtonLocation: dir == TextDirection.ltr
