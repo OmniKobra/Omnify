@@ -1,4 +1,0 @@
-flutter_native_splash:
-  color: "#ffffff" 
-  image: assets/launcher2.png
-  fullscreen: false
