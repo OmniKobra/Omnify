@@ -1,0 +1,1028 @@
+[
+  {
+    "type": "constructor",
+    "inputs": [
+      {
+        "name": "_omnifyAddress",
+        "type": "address",
+        "internalType": "address"
+      },
+      {
+        "name": "_paramNativeDecimals",
+        "type": "uint8",
+        "internalType": "uint8"
+      },
+      {
+        "name": "_paramAltcoinFee",
+        "type": "uint256",
+        "internalType": "uint256"
+      },
+      {
+        "name": "_paramTier1Fee",
+        "type": "uint256",
+        "internalType": "uint256"
+      },
+      {
+        "name": "_paramtier2Fee",
+        "type": "uint256",
+        "internalType": "uint256"
+      },
+      {
+        "name": "_paramTier3Fee",
+        "type": "uint256",
+        "internalType": "uint256"
+      },
+      {
+        "name": "_paramTier4Fee",
+        "type": "uint256",
+        "internalType": "uint256"
+      },
+      {
+        "name": "_paramTier1HigherThreshold",
+        "type": "uint256",
+        "internalType": "uint256"
+      },
+      {
+        "name": "_paramTier2HigherThreshold",
+        "type": "uint256",
+        "internalType": "uint256"
+      },
+      {
+        "name": "_paramTier3HigherThreshold",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "type": "function",
+    "name": "altcoinFee",
+    "inputs": [],
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "type": "function",
+    "name": "conductTransfers",
+    "inputs": [
+      {
+        "name": "_trz",
+        "type": "tuple[]",
+        "internalType": "struct Transfers.ParamTransfer[]",
+        "components": [
+          {
+            "name": "asset",
+            "type": "address",
+            "internalType": "address"
+          },
+          {
+            "name": "amount",
+            "type": "uint256",
+            "internalType": "uint256"
+          },
+          {
+            "name": "recipient",
+            "type": "address",
+            "internalType": "address payable"
+          },
+          {
+            "name": "id",
+            "type": "string",
+            "internalType": "string"
+          }
+        ]
+      }
+    ],
+    "outputs": [],
+    "stateMutability": "payable"
+  },
+  {
+    "type": "function",
+    "name": "feeKeeperAddress",
+    "inputs": [],
+    "outputs": [
+      {
+        "name": "",
+        "type": "address",
+        "internalType": "address"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "type": "function",
+    "name": "getMinAmount",
+    "inputs": [
+      {
+        "name": "_decimals",
+        "type": "uint8",
+        "internalType": "uint8"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "stateMutability": "pure"
+  },
+  {
+    "type": "function",
+    "name": "lookupTransfer",
+    "inputs": [
+      {
+        "name": "_id",
+        "type": "string",
+        "internalType": "string"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "",
+        "type": "tuple",
+        "internalType": "struct Transfers.Transfer",
+        "components": [
+          {
+            "name": "id",
+            "type": "string",
+            "internalType": "string"
+          },
+          {
+            "name": "sender",
+            "type": "address",
+            "internalType": "address"
+          },
+          {
+            "name": "recipient",
+            "type": "address",
+            "internalType": "address"
+          },
+          {
+            "name": "assetAddress",
+            "type": "address",
+            "internalType": "address"
+          },
+          {
+            "name": "amount",
+            "type": "uint256",
+            "internalType": "uint256"
+          },
+          {
+            "name": "date",
+            "type": "uint256",
+            "internalType": "uint256"
+          },
+          {
+            "name": "exists",
+            "type": "bool",
+            "internalType": "bool"
+          }
+        ]
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "type": "function",
+    "name": "lookupTransferAssetFromProfile",
+    "inputs": [
+      {
+        "name": "_profile",
+        "type": "address",
+        "internalType": "address"
+      },
+      {
+        "name": "_count",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "",
+        "type": "address",
+        "internalType": "address"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "type": "function",
+    "name": "lookupTransferProfileAssetStats",
+    "inputs": [
+      {
+        "name": "_profile",
+        "type": "address",
+        "internalType": "address"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "",
+        "type": "tuple[]",
+        "internalType": "struct Transfers.AssetStat[]",
+        "components": [
+          {
+            "name": "sent",
+            "type": "uint256",
+            "internalType": "uint256"
+          },
+          {
+            "name": "received",
+            "type": "uint256",
+            "internalType": "uint256"
+          }
+        ]
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "type": "function",
+    "name": "lookupTransferProfileReceiveds",
+    "inputs": [
+      {
+        "name": "_profile",
+        "type": "address",
+        "internalType": "address"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "type": "function",
+    "name": "lookupTransferProfileSents",
+    "inputs": [
+      {
+        "name": "_profile",
+        "type": "address",
+        "internalType": "address"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "type": "function",
+    "name": "lookupTransferProfileTransfers",
+    "inputs": [
+      {
+        "name": "_profile",
+        "type": "address",
+        "internalType": "address"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "",
+        "type": "tuple[]",
+        "internalType": "struct Transfers.ProfileTransfer[]",
+        "components": [
+          {
+            "name": "id",
+            "type": "string",
+            "internalType": "string"
+          }
+        ]
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "type": "function",
+    "name": "nativeCoinDecimals",
+    "inputs": [],
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint8",
+        "internalType": "uint8"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "type": "function",
+    "name": "omnifyAddress",
+    "inputs": [],
+    "outputs": [
+      {
+        "name": "",
+        "type": "address",
+        "internalType": "address"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "type": "function",
+    "name": "owner",
+    "inputs": [],
+    "outputs": [
+      {
+        "name": "",
+        "type": "address",
+        "internalType": "address"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "type": "function",
+    "name": "renounceOwnership",
+    "inputs": [],
+    "outputs": [],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "type": "function",
+    "name": "setAltcoinFee",
+    "inputs": [
+      {
+        "name": "_fee",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "outputs": [],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "type": "function",
+    "name": "setAltcoinFeeByFeeKeeper",
+    "inputs": [
+      {
+        "name": "_fee",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "outputs": [],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "type": "function",
+    "name": "setFeeKeeperAddress",
+    "inputs": [
+      {
+        "name": "_feeKeeper",
+        "type": "address",
+        "internalType": "address"
+      }
+    ],
+    "outputs": [],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "type": "function",
+    "name": "setOmnifyAddress",
+    "inputs": [
+      {
+        "name": "_newaddress",
+        "type": "address",
+        "internalType": "address"
+      }
+    ],
+    "outputs": [],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "type": "function",
+    "name": "setTier1",
+    "inputs": [
+      {
+        "name": "_lowerThreshold",
+        "type": "uint256",
+        "internalType": "uint256"
+      },
+      {
+        "name": "_higherThreshold",
+        "type": "uint256",
+        "internalType": "uint256"
+      },
+      {
+        "name": "_fee",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "outputs": [],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "type": "function",
+    "name": "setTier1ByFeeKeeper",
+    "inputs": [
+      {
+        "name": "_lowerThreshold",
+        "type": "uint256",
+        "internalType": "uint256"
+      },
+      {
+        "name": "_higherThreshold",
+        "type": "uint256",
+        "internalType": "uint256"
+      },
+      {
+        "name": "_fee",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "outputs": [],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "type": "function",
+    "name": "setTier2",
+    "inputs": [
+      {
+        "name": "_lowerThreshold",
+        "type": "uint256",
+        "internalType": "uint256"
+      },
+      {
+        "name": "_higherThreshold",
+        "type": "uint256",
+        "internalType": "uint256"
+      },
+      {
+        "name": "_fee",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "outputs": [],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "type": "function",
+    "name": "setTier2ByFeeKeeper",
+    "inputs": [
+      {
+        "name": "_lowerThreshold",
+        "type": "uint256",
+        "internalType": "uint256"
+      },
+      {
+        "name": "_higherThreshold",
+        "type": "uint256",
+        "internalType": "uint256"
+      },
+      {
+        "name": "_fee",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "outputs": [],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "type": "function",
+    "name": "setTier3",
+    "inputs": [
+      {
+        "name": "_lowerThreshold",
+        "type": "uint256",
+        "internalType": "uint256"
+      },
+      {
+        "name": "_higherThreshold",
+        "type": "uint256",
+        "internalType": "uint256"
+      },
+      {
+        "name": "_fee",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "outputs": [],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "type": "function",
+    "name": "setTier3ByFeeKeeper",
+    "inputs": [
+      {
+        "name": "_lowerThreshold",
+        "type": "uint256",
+        "internalType": "uint256"
+      },
+      {
+        "name": "_higherThreshold",
+        "type": "uint256",
+        "internalType": "uint256"
+      },
+      {
+        "name": "_fee",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "outputs": [],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "type": "function",
+    "name": "setTier4",
+    "inputs": [
+      {
+        "name": "_lowerThreshold",
+        "type": "uint256",
+        "internalType": "uint256"
+      },
+      {
+        "name": "_higherThreshold",
+        "type": "uint256",
+        "internalType": "uint256"
+      },
+      {
+        "name": "_fee",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "outputs": [],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "type": "function",
+    "name": "setTier4ByFeeKeeper",
+    "inputs": [
+      {
+        "name": "_lowerThreshold",
+        "type": "uint256",
+        "internalType": "uint256"
+      },
+      {
+        "name": "_higherThreshold",
+        "type": "uint256",
+        "internalType": "uint256"
+      },
+      {
+        "name": "_fee",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "outputs": [],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "type": "function",
+    "name": "tier1",
+    "inputs": [],
+    "outputs": [
+      {
+        "name": "lowerThreshold",
+        "type": "uint256",
+        "internalType": "uint256"
+      },
+      {
+        "name": "higherThreshold",
+        "type": "uint256",
+        "internalType": "uint256"
+      },
+      {
+        "name": "fee",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "type": "function",
+    "name": "tier2",
+    "inputs": [],
+    "outputs": [
+      {
+        "name": "lowerThreshold",
+        "type": "uint256",
+        "internalType": "uint256"
+      },
+      {
+        "name": "higherThreshold",
+        "type": "uint256",
+        "internalType": "uint256"
+      },
+      {
+        "name": "fee",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "type": "function",
+    "name": "tier3",
+    "inputs": [],
+    "outputs": [
+      {
+        "name": "lowerThreshold",
+        "type": "uint256",
+        "internalType": "uint256"
+      },
+      {
+        "name": "higherThreshold",
+        "type": "uint256",
+        "internalType": "uint256"
+      },
+      {
+        "name": "fee",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "type": "function",
+    "name": "tier4",
+    "inputs": [],
+    "outputs": [
+      {
+        "name": "lowerThreshold",
+        "type": "uint256",
+        "internalType": "uint256"
+      },
+      {
+        "name": "higherThreshold",
+        "type": "uint256",
+        "internalType": "uint256"
+      },
+      {
+        "name": "fee",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "type": "function",
+    "name": "totalAssetsTransferred",
+    "inputs": [],
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "type": "function",
+    "name": "totalNumerOfTransfers",
+    "inputs": [],
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "type": "function",
+    "name": "totalRecipientsUnique",
+    "inputs": [],
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "type": "function",
+    "name": "totalSendersUnique",
+    "inputs": [],
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "type": "function",
+    "name": "transferOwnership",
+    "inputs": [
+      {
+        "name": "newOwner",
+        "type": "address",
+        "internalType": "address"
+      }
+    ],
+    "outputs": [],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "type": "function",
+    "name": "transferProfiles",
+    "inputs": [
+      {
+        "name": "",
+        "type": "address",
+        "internalType": "address"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "transfersSent",
+        "type": "uint256",
+        "internalType": "uint256"
+      },
+      {
+        "name": "transfersReceived",
+        "type": "uint256",
+        "internalType": "uint256"
+      },
+      {
+        "name": "exists",
+        "type": "bool",
+        "internalType": "bool"
+      },
+      {
+        "name": "transfersCount",
+        "type": "uint256",
+        "internalType": "uint256"
+      },
+      {
+        "name": "assetCount",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "type": "function",
+    "name": "transfers",
+    "inputs": [
+      {
+        "name": "",
+        "type": "string",
+        "internalType": "string"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "id",
+        "type": "string",
+        "internalType": "string"
+      },
+      {
+        "name": "sender",
+        "type": "address",
+        "internalType": "address"
+      },
+      {
+        "name": "recipient",
+        "type": "address",
+        "internalType": "address"
+      },
+      {
+        "name": "assetAddress",
+        "type": "address",
+        "internalType": "address"
+      },
+      {
+        "name": "amount",
+        "type": "uint256",
+        "internalType": "uint256"
+      },
+      {
+        "name": "date",
+        "type": "uint256",
+        "internalType": "uint256"
+      },
+      {
+        "name": "exists",
+        "type": "bool",
+        "internalType": "bool"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "type": "event",
+    "name": "AssetsReceived",
+    "inputs": [
+      {
+        "name": "_id",
+        "type": "string",
+        "indexed": false,
+        "internalType": "string"
+      },
+      {
+        "name": "_sender",
+        "type": "address",
+        "indexed": false,
+        "internalType": "address"
+      },
+      {
+        "name": "_recipient",
+        "type": "address",
+        "indexed": false,
+        "internalType": "address"
+      },
+      {
+        "name": "_asset",
+        "type": "address",
+        "indexed": false,
+        "internalType": "address"
+      },
+      {
+        "name": "_amount",
+        "type": "uint256",
+        "indexed": false,
+        "internalType": "uint256"
+      },
+      {
+        "name": "_blockNumber",
+        "type": "uint256",
+        "indexed": false,
+        "internalType": "uint256"
+      },
+      {
+        "name": "_date",
+        "type": "uint256",
+        "indexed": false,
+        "internalType": "uint256"
+      }
+    ],
+    "anonymous": false
+  },
+  {
+    "type": "event",
+    "name": "AssetsSent",
+    "inputs": [
+      {
+        "name": "_id",
+        "type": "string",
+        "indexed": false,
+        "internalType": "string"
+      },
+      {
+        "name": "_sender",
+        "type": "address",
+        "indexed": false,
+        "internalType": "address"
+      },
+      {
+        "name": "_recipient",
+        "type": "address",
+        "indexed": false,
+        "internalType": "address"
+      },
+      {
+        "name": "_asset",
+        "type": "address",
+        "indexed": false,
+        "internalType": "address"
+      },
+      {
+        "name": "_amount",
+        "type": "uint256",
+        "indexed": false,
+        "internalType": "uint256"
+      },
+      {
+        "name": "_blockNumber",
+        "type": "uint256",
+        "indexed": false,
+        "internalType": "uint256"
+      },
+      {
+        "name": "_date",
+        "type": "uint256",
+        "indexed": false,
+        "internalType": "uint256"
+      }
+    ],
+    "anonymous": false
+  },
+  {
+    "type": "event",
+    "name": "OwnershipTransferred",
+    "inputs": [
+      {
+        "name": "previousOwner",
+        "type": "address",
+        "indexed": true,
+        "internalType": "address"
+      },
+      {
+        "name": "newOwner",
+        "type": "address",
+        "indexed": true,
+        "internalType": "address"
+      }
+    ],
+    "anonymous": false
+  },
+  {
+    "type": "event",
+    "name": "TransferComplete",
+    "inputs": [
+      {
+        "name": "_id",
+        "type": "string",
+        "indexed": false,
+        "internalType": "string"
+      },
+      {
+        "name": "_sender",
+        "type": "address",
+        "indexed": false,
+        "internalType": "address"
+      },
+      {
+        "name": "_recipient",
+        "type": "address",
+        "indexed": false,
+        "internalType": "address"
+      },
+      {
+        "name": "_asset",
+        "type": "address",
+        "indexed": false,
+        "internalType": "address"
+      },
+      {
+        "name": "_amount",
+        "type": "uint256",
+        "indexed": false,
+        "internalType": "uint256"
+      },
+      {
+        "name": "_blockNumber",
+        "type": "uint256",
+        "indexed": false,
+        "internalType": "uint256"
+      },
+      {
+        "name": "_date",
+        "type": "uint256",
+        "indexed": false,
+        "internalType": "uint256"
+      }
+    ],
+    "anonymous": false
+  },
+  {
+    "type": "error",
+    "name": "OwnableInvalidOwner",
+    "inputs": [
+      {
+        "name": "owner",
+        "type": "address",
+        "internalType": "address"
+      }
+    ]
+  },
+  {
+    "type": "error",
+    "name": "OwnableUnauthorizedAccount",
+    "inputs": [
+      {
+        "name": "account",
+        "type": "address",
+        "internalType": "address"
+      }
+    ]
+  }
+]
