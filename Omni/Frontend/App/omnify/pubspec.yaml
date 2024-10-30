@@ -1,5 +1,5 @@
 name: omnify
-description: "A new Flutter project."
+description: "Omnify hosts a multi-chain suite of defi products and services faciliating seamless transactions through the security of smart contracts."
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
 publish_to: 'none' # Remove this line if you wish to publish to pub.dev
