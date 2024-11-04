@@ -48,10 +48,10 @@ class _DepositTabState extends State<DepositTab>
   final formKey = GlobalKey<FormState>();
   bool statusActive = true;
   bool statusInactive = false;
-  bool typeFixed = true;
-  bool typeModifiable = false;
-  bool liquidityRetractable = false;
-  bool liquidityNonRetract = true;
+  bool typeFixed = false;
+  bool typeModifiable = true;
+  bool liquidityRetractable = true;
+  bool liquidityNonRetract = false;
   Decimal omnifyFee = Decimal.parse("0.0");
   Decimal networkFee = Decimal.parse("0.0");
   Decimal total = Decimal.parse("0.0");
