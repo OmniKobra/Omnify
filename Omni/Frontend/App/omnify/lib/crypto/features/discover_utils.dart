@@ -419,9 +419,9 @@ class DiscoverUtils {
           await ChainUtils.getCoinFromAddress(c, b.asset.hex, client);
       addEvent(DiscoverBridgeEvent(
           id: b.id.toString(),
-          sourceAddress: ChainUtils.hexFromEthAddress(c, b.sourceAddress),
+          sourceAddress: ChainUtils.hexFromEthAddress(Utils.lzEidToChain(b.sourceChain.toInt()), b.sourceAddress),
           destinationAddress:
-              ChainUtils.hexFromEthAddress(c, b.destinationAddress),
+              ChainUtils.hexFromEthAddress(Utils.lzEidToChain(b.destinationChain.toInt()), b.destinationAddress),
           sourceChain: Utils.lzEidToChain(b.sourceChain.toInt()),
           destinationChain: Utils.lzEidToChain(b.destinationChain.toInt()),
           asset: ChainUtils.hexFromEthAddress(c, b.asset),
@@ -442,9 +442,9 @@ class DiscoverUtils {
           await ChainUtils.getCoinFromAddress(c, b.asset.hex, client);
       addEvent(DiscoverBridgeEvent(
           id: b.id.toString(),
-          sourceAddress: ChainUtils.hexFromEthAddress(c, b.sourceAddress),
+          sourceAddress: ChainUtils.hexFromEthAddress(Utils.lzEidToChain(b.sourceChain.toInt()), b.sourceAddress),
           destinationAddress:
-              ChainUtils.hexFromEthAddress(c, b.destinationAddress),
+              ChainUtils.hexFromEthAddress(Utils.lzEidToChain(b.destinationChain.toInt()), b.destinationAddress),
           sourceChain: Utils.lzEidToChain(b.sourceChain.toInt()),
           destinationChain: Utils.lzEidToChain(b.destinationChain.toInt()),
           asset: ChainUtils.hexFromEthAddress(c, b.asset),
