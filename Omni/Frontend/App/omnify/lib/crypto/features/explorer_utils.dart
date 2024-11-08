@@ -163,8 +163,8 @@ class ExplorerUtils {
         var amount = ChainUtils.uintToDecimal(c, a, res[1]);
         var sourceChain = Utils.lzEidToChain(res[2].toInt());
         var destinationChain = Utils.lzEidToChain(res[3].toInt());
-        var sourceAddress = ChainUtils.hexFromEthAddress(c, res[4]);
-        var destinationAddress = ChainUtils.hexFromEthAddress(c, res[5]);
+        var sourceAddress = ChainUtils.hexFromEthAddress(sourceChain, res[4]);
+        var destinationAddress = ChainUtils.hexFromEthAddress(destinationChain, res[5]);
         var date = ChainUtils.chainDateToDt(res[6]);
         ExplorerBridge btx = ExplorerBridge(
             id: id,
