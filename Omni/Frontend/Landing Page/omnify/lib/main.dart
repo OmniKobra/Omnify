@@ -86,7 +86,7 @@ class _MyAppState extends State<MyApp> {
               child: Consumer<ThemeProvider>(
                   builder: (ctx, theme, _) => ToastificationWrapper(
                           child: MaterialApp(
-                        title: 'Omnify',
+                        title: 'Omnify | DeFi Hub',
                         themeMode:
                             theme.isDark ? ThemeMode.dark : ThemeMode.light,
                         debugShowCheckedModeBanner: false,
