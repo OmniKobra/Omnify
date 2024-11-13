@@ -8,6 +8,7 @@ import 'package:walletconnect_flutter_v2/walletconnect_flutter_v2.dart';
 import '../crypto/utils/chain_data.dart';
 import '../crypto/utils/eip155.dart';
 import '../languages/app_language.dart';
+import '../providers/governance_provider.dart';
 import '../providers/home_provider.dart';
 import '../providers/theme_provider.dart';
 import '../providers/wallet_provider.dart';
@@ -172,6 +173,14 @@ class _MyHomePageState extends State<MyHomePage> {
             setTopic(pairingTopic);
             setSessionTopic(session.topic);
           });
+        }
+        final currentView =
+            Provider.of<HomeProvider>(context, listen: false).currentView;
+        if (currentView == TabView.governance) {
+          final _client =
+              Provider.of<ThemeProvider>(context, listen: false).client;
+          Provider.of<GovernanceProvider>(context, listen: false).setChain(
+              thisChain, lang, _client, _nestedAddresses[thisChain], true);
         }
       } else {
         _stateWcClient
