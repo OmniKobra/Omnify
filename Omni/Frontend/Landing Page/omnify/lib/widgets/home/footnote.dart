@@ -105,7 +105,7 @@ class _FootNoteState extends State<FootNote> {
               //         style: TextStyle(
               //             color: isDark ? Colors.white70 : Colors.black))),
               Wrap(children: [
-                buildLinkerIcon(MyFlutterApp.x, "https://x.com/ofyblob",
+                buildLinkerIcon(MyFlutterApp.x, "https://x.com/OmnifyFi",
                     widthQuery, isDark),
                 buildLinkerIcon(MyFlutterApp.telegram,
                     "https://t.me/omnifyfinance", widthQuery, isDark),
