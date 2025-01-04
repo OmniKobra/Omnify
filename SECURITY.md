@@ -13,7 +13,7 @@ This project only supports the latest release which is `v1.1.9` for the landing 
 Upon discovery of a vulnerability, reach out to any of the repository's contributors via their E-mail or Telegram (if declared).
 * @OmniKobra ([Telegram](https://t.me/omnikobra))
 * @yDragoman ([email](mailto:omnikobra@yahoo.com))
-* The OmnifyTeam ([email](mailto:general@omnify.finance))
+* The Omnify Team ([email](mailto:general@omnify.finance))
 
 Please provide the following details when reporting a vulnerability:
 
