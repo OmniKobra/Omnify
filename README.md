@@ -21,6 +21,14 @@
 ![Image](https://raw.githubusercontent.com/OmniKobra/Omnify/refs/heads/main/assets/cropped-shrinked.png)
 <h2><a href="https://transfer.omnify.finance"><img alt="OmniTransfers" src="https://raw.githubusercontent.com/OmniKobra/Omnify/refs/heads/main/assets/omnitransfer.png" width="32">  OmniTransfers</a></h2>
 
+<h2><a href="https://pay.omnify.finance"><img alt="OmniPay" src="https://raw.githubusercontent.com/OmniKobra/Omnify/refs/heads/main/assets/omnipay.png" width="32">  OmniPay</a></h2>
+
+<h2><a href="https://trust.omnify.finance"><img alt="OmniTrust" src="https://raw.githubusercontent.com/OmniKobra/Omnify/refs/heads/main/assets/omnitrust.png" width="32">  OmniTrust</a></h2>
+
+<h2><a href="https://bridge.omnify.finance"><img alt="OmniBridge" src="https://raw.githubusercontent.com/OmniKobra/Omnify/refs/heads/main/assets/omnibridge.png" width="32">  OmniBridge</a></h2>
+
+<h2><a href="https://escrow.omnify.finance"><img alt="OmniEscrow" src="https://raw.githubusercontent.com/OmniKobra/Omnify/refs/heads/main/assets/omniescrow.png" width="32">  OmniEscrow</a></h2>
+
 ## Tech Stack
 
 - Solidity (Smart contracts)
