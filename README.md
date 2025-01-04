@@ -48,8 +48,31 @@ Start conducting crypto payments on OmniPay at <a href="https://pay.omnify.finan
 </p>
 
 <h2><a href="https://trust.omnify.finance"><img alt="OmniTrust" src="https://raw.githubusercontent.com/OmniKobra/Omnify/refs/heads/main/assets/omnitrust.png" width="32">  OmniTrust</a></h2>
+<p>
+OmniTrust allows users to deposit crypto into Omnify using any ERC20 or native asset of their choosing. Upon creation of the deposit the creator can specify other owners who can modify any of the deposit's properties. Additionally, beneficiaries can be declared with or without daily allownces.
+</p>
+
+* Deposit ERC20 and native tokens
+* Multiple addresses with owner privileges
+* Beneficiaries with unlimited withdrawals
+* Beneficiaries with daily allowances
+* Crypto deposits retractable by any of the owners
+<p>
+Deposit crypto assets into Omnify with OmniTrust at <a href="https://trust.omnify.finance">trust.omnify.finance</a> or at <a href="https://app.omnify.finance/trust">app.omnify.finance/trust</a>.
+</p>
 
 <h2><a href="https://bridge.omnify.finance"><img alt="OmniBridge" src="https://raw.githubusercontent.com/OmniKobra/Omnify/refs/heads/main/assets/omnibridge.png" width="32">  OmniBridge</a></h2>
+<p>
+Bridge crypto between all of our supported blockchain networks on OmniBridge. Utilize Omnify's lock and mint / burn on return functionality to bridge crypto instantly across more than 420 routes. Our source and bridged crypto tokens maintain a 1:1 peg.
+</p>
+
+* Bridge any ERC20 tokens
+* Bridge wrapped native tokens
+* Lock and mint / burn on return
+* 1:1 peg
+<p>
+Migrate or retun your Omnify (OFY) bridged crypto assets via our crypto bridge at <a href="https://bridge.omnify.finance">bridge.omnify.finance</a> or at <a href="https://app.omnify.finance/bridges">app.omnify.finance/bridges</a>.
+</p>
 
 <h2><a href="https://escrow.omnify.finance"><img alt="OmniEscrow" src="https://raw.githubusercontent.com/OmniKobra/Omnify/refs/heads/main/assets/omniescrow.png" width="32">  OmniEscrow</a></h2>
 
