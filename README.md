@@ -20,8 +20,32 @@
 
 ![Image](https://raw.githubusercontent.com/OmniKobra/Omnify/refs/heads/main/assets/cropped-shrinked.png)
 <h2><a href="https://transfer.omnify.finance"><img alt="OmniTransfers" src="https://raw.githubusercontent.com/OmniKobra/Omnify/refs/heads/main/assets/omnitransfer.png" width="32">  OmniTransfers</a></h2>
+<p>
+Omnify's crypto multisender, throttler, bulk-sender allows you to conduct multiple crypto transfers in the same transaction. Supports ERC20 and native tokens to several different recipients in the same batch.<br>
+</p>
+
+* Uncapped ERC20 and native token transfers
+* Unlimited number of transfers in the same batch
+* Instant settlement (same transaction)
+* Multiple unique recipients in same batch
+* Different assets in the same batch
+<p>
+You can streamline your bulk sending transactions with OmniTransfers at <a href="https://transfer.omnify.finance">transfer.omnify.finance</a> or at <a href="https://app.omnify.finance/transfers">app.omnify.finance/transfers</a>.
+</p>
 
 <h2><a href="https://pay.omnify.finance"><img alt="OmniPay" src="https://raw.githubusercontent.com/OmniKobra/Omnify/refs/heads/main/assets/omnipay.png" width="32">  OmniPay</a></h2>
+<p>
+Omnify's crypto payments suite covers all your crypto payment needs. OmniPay paves the way for full payments, receipts, refunds, installments, and instant revenue withdrawals. All crypto payments on OmniPay are conducted using the native token of the underlying blockchain network, which uses low network fees.<br>
+</p>
+
+* Instant revenue withdrawals at 0.00% fees
+* Scan to pay
+* Crypto installments
+* Reusable Pay me links
+* One-time pay me links
+<p>
+Start conducting crypto payments on OmniPay at <a href="https://pay.omnify.finance">pay.omnify.finance</a> or at <a href="https://app.omnify.finance/payments">app.omnify.finance/payments</a>.
+</p>
 
 <h2><a href="https://trust.omnify.finance"><img alt="OmniTrust" src="https://raw.githubusercontent.com/OmniKobra/Omnify/refs/heads/main/assets/omnitrust.png" width="32">  OmniTrust</a></h2>
 
