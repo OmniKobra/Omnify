@@ -75,6 +75,18 @@ Migrate or retun your Omnify (OFY) bridged crypto assets via our crypto bridge a
 </p>
 
 <h2><a href="https://escrow.omnify.finance"><img alt="OmniEscrow" src="https://raw.githubusercontent.com/OmniKobra/Omnify/refs/heads/main/assets/omniescrow.png" width="32">  OmniEscrow</a></h2>
+<p>
+OmniEscrow is a form of digital asset auctioning and bidding. Any ERC20 or native crypto tokens can be auctioned and bidden. Create new escrow contracts to offer assets and receive bids or place bids on existing contracts, upon acceptance of a bid the bidder instantly receives the offered assets, and the auctioner instantly receives the bidden assets; this happens in the same transaction ensuring safety and transparency. 
+</p>
+
+* Instant same transaction settlement upon agreement 
+* Unlimited crypto auctions per address
+* 1 bid per address on an auction
+* Accepted bidder receives auctioned assets
+* Auction owner receives the bidden assets they accept
+<p>
+Start auctioning or bidding your crypto tokens at <a href="https://escrow.omnify.finance">escrow.omnify.finance</a> or at <a href="https://app.omnify.finance/escrow">app.omnify.finance/escrow</a>. Learn more about OmniEscrow by reading its <a href="https://omnify.gitbook.io/omnify-docs/deep-dive/omniescrow">documentation</a>.
+</p>
 
 ## Tech Stack
 
