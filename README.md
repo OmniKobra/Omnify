@@ -30,7 +30,7 @@ Omnify's crypto multisender, throttler, bulk-sender allows you to conduct multip
 * Multiple unique recipients in same batch
 * Different assets in the same batch
 <p>
-You can streamline your bulk sending transactions with OmniTransfers at <a href="https://transfer.omnify.finance">transfer.omnify.finance</a> or at <a href="https://app.omnify.finance/transfers">app.omnify.finance/transfers</a>.
+You can streamline your bulk sending transactions with OmniTransfers at <a href="https://transfer.omnify.finance">transfer.omnify.finance</a> or at <a href="https://app.omnify.finance/transfers">app.omnify.finance/transfers</a>. Learn more about OmniTransfers by reading its <a href="https://omnify.gitbook.io/omnify-docs/deep-dive/omnitransfers">documentation</a>.
 </p>
 
 <h2><a href="https://pay.omnify.finance"><img alt="OmniPay" src="https://raw.githubusercontent.com/OmniKobra/Omnify/refs/heads/main/assets/omnipay.png" width="32">  OmniPay</a></h2>
@@ -44,7 +44,7 @@ Omnify's crypto payments suite covers all your crypto payment needs. OmniPay pav
 * Reusable Pay me links
 * One-time pay me links
 <p>
-Start conducting crypto payments on OmniPay at <a href="https://pay.omnify.finance">pay.omnify.finance</a> or at <a href="https://app.omnify.finance/payments">app.omnify.finance/payments</a>.
+Start conducting crypto payments on OmniPay at <a href="https://pay.omnify.finance">pay.omnify.finance</a> or at <a href="https://app.omnify.finance/payments">app.omnify.finance/payments</a>. Learn more about OmniPay by reading its <a href="https://omnify.gitbook.io/omnify-docs/deep-dive/omnipay">documentation</a>.
 </p>
 
 <h2><a href="https://trust.omnify.finance"><img alt="OmniTrust" src="https://raw.githubusercontent.com/OmniKobra/Omnify/refs/heads/main/assets/omnitrust.png" width="32">  OmniTrust</a></h2>
@@ -58,7 +58,7 @@ OmniTrust allows users to deposit crypto into Omnify using any ERC20 or native a
 * Beneficiaries with daily allowances
 * Crypto deposits retractable by any of the owners
 <p>
-Deposit crypto assets into Omnify with OmniTrust at <a href="https://trust.omnify.finance">trust.omnify.finance</a> or at <a href="https://app.omnify.finance/trust">app.omnify.finance/trust</a>.
+Deposit crypto assets into Omnify with OmniTrust at <a href="https://trust.omnify.finance">trust.omnify.finance</a> or at <a href="https://app.omnify.finance/trust">app.omnify.finance/trust</a>. Learn more about OmniTrust by reading its <a href="https://omnify.gitbook.io/omnify-docs/deep-dive/omnitrust">documentation</a>.
 </p>
 
 <h2><a href="https://bridge.omnify.finance"><img alt="OmniBridge" src="https://raw.githubusercontent.com/OmniKobra/Omnify/refs/heads/main/assets/omnibridge.png" width="32">  OmniBridge</a></h2>
@@ -71,7 +71,7 @@ Bridge crypto between all of our supported blockchain networks on OmniBridge. Ut
 * Lock and mint / burn on return
 * 1:1 peg
 <p>
-Migrate or retun your Omnify (OFY) bridged crypto assets via our crypto bridge at <a href="https://bridge.omnify.finance">bridge.omnify.finance</a> or at <a href="https://app.omnify.finance/bridges">app.omnify.finance/bridges</a>.
+Migrate or retun your Omnify (OFY) bridged crypto assets via our crypto bridge at <a href="https://bridge.omnify.finance">bridge.omnify.finance</a> or at <a href="https://app.omnify.finance/bridges">app.omnify.finance/bridges</a>. Learn more about OmniBridge by reading its <a href="https://omnify.gitbook.io/omnify-docs/deep-dive/omnibridge">documentation</a>.
 </p>
 
 <h2><a href="https://escrow.omnify.finance"><img alt="OmniEscrow" src="https://raw.githubusercontent.com/OmniKobra/Omnify/refs/heads/main/assets/omniescrow.png" width="32">  OmniEscrow</a></h2>
