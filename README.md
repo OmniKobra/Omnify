@@ -94,8 +94,11 @@ Start auctioning or bidding your crypto tokens at <a href="https://escrow.omnify
 - Flutter (UI/UX)
 - Ankr (RPC endpoints)
 - WalletConnect 
-- GoldRush API
+- Dune API
 - Firebase (hosting)
+- Gitbook (Documentation)
+- LayerZero
+- Chainlink (Keepers)
 
 # License
 
